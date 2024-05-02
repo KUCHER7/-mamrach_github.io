@@ -1,0 +1,576 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(img/MAMRACH.png) no-repeat;
+    background-size: 100%;
+    height: 1000px;
+}
+._container {
+    min-width: 976px;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+}   
+.header__menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 0 0;
+}
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    color: #fff;
+}
+.number {
+    margin: 10px 51px 0 0;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.numbers::before {
+    content: "";
+    position: relative;
+    float: left;
+    margin: -2px 10px 0 0;
+    
+    width: 20px;
+    height: 20px;
+    background: url(img/icon_1.png);
+}
+
+.button_link {
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 7px 22px;
+    background-color: #709E51;
+    border-radius: 5px;
+}
+.header__navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0 0 0;
+    border-bottom: 2px solid #fff;
+}
+.navigation__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation__item_1{
+    margin: 0 90px 0 0;
+}
+.navigation__item_2 {
+    margin: 0 0 0 0;
+}
+.navigation__item_3 {
+    margin: 0 100px 0 0;
+}
+.navigation__item_4 {
+    margin: 0 0 0 0;
+}
+@media (max-width: 1025px) {
+    ._container {
+        min-width: 500px;
+    }
+    .navigation__item_1{
+        margin: 0 0 0 0;
+    }
+    .navigation__item_2 {
+        margin: 0 0 0 0;
+    }
+    .navigation__item_3 {
+        margin: 0 0 0 0;
+    }
+    .navigation__item_4 {
+        margin: 0 0 0 0;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(img/MAMRACH.png) no-repeat;
+        background-size: 100%;
+        height: 500px;
+    }
+}
+
+.logo {
+    margin: 0 24px 0 0;
+    padding: 0 0 0 0;
+}
+.navigation__link {
+    color: #fff;
+    margin: 0 30px;
+}
+.header__text {
+    font-size: 48px;
+    font-weight: lighter;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 4px;
+}
+.header__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 142px 0 0 0;
+    color: #fff;
+}
+.menu_burger {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.disp {
+    display: none;
+}
+.nav-item {
+    margin: 0 0 10px 0;
+}
+@media (max-width: 768px) {
+    .header__navigation {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px 0 0 0;
+        border-bottom: 2px solid #fff;
+    }
+    .header__text {
+        font-size: 30px;
+        font-weight: lighter;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.2;
+        letter-spacing: 4px;
+    }
+    .menu_burger {
+        display: flex;
+        position: absolute;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(img/MAMRACH.png) no-repeat;
+        background-size: 100%;
+        height: 400px;
+    }
+
+}
+.header__form {
+    display: flex;
+    flex-direction: column;
+    margin: 130px 0 0 0;
+}
+@media (max-width: 1024px) {
+    .header__form {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+    }
+    
+}
+.form__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form__fir {
+    display: flex;
+    margin: 0 84px 0 0;
+}
+.form__input {
+    width: 209px;
+    height: 45px;
+    margin: 0 21px 0 0;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.form__link {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: bold;
+    padding: 13px 48px;
+    border: 2px solid #709E51;
+    background: #709E51;
+    border-radius: 5px;
+    transition: background .5s;
+}
+
+.form__link:hover {
+    background: none;
+}
+
+@media (max-width: 425px) {
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: url(img/MAMRACH.png) no-repeat;
+        background-size: 100%;
+        height: 100%;
+    }
+    .header__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 330px;
+        color: #fff;
+    }
+    .number {
+        margin: 0 0 0 0;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0 50px 10px 0;
+    }
+    .button_link {
+        color: #fff;
+        font-size: 10px;
+        font-weight: bold;
+        padding: 7px 22px;
+        background-color: #709E51;
+        border-radius: 5px;
+        margin: 10px 50px 0 0;
+    }
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 0 0;
+        color: #fff;
+    }
+    .header__text {
+        font-size: 12px;
+        font-weight: lighter;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.2;
+        letter-spacing: 4px;
+    }
+    .form__link {
+        color: #fff;
+        font-size: 10px;
+        line-height: 1.2;
+        font-weight: bold;
+        padding: 10px 24px;
+        border: 2px solid #709E51;
+        background: #709E51;
+        border-radius: 5px;
+        transition: background .5s;
+    }
+    .header__form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo {
+        margin: 0 0 0 0;
+        padding: 5px 0 0 0;
+    }
+    .navigation__logo {
+        padding: 0;
+        margin: 0;
+        width: 100px;
+        height: 50px;
+    }
+    .navigation__link {
+        margin: 0;
+        padding: 0;
+    }
+    .header__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    .header__menu {
+        padding: 20px 0 0 0;
+    }
+    .header__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        color: #fff;
+    }
+    .number {
+        margin: 0 0 0 0;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0 50px 10px 0;
+    }
+}
+/*-----------Об отеле------------*/
+
+.about_hotel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/about_paint.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+@media (max-width: 1024px) {
+    .about_hotel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/about_paint.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+}
+.about__container {
+    display: flex;
+    justify-content: center;
+}
+
+.about__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 0 0 28px;
+}
+
+.about__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.57px;
+    font-family: "Roboto", sans-serif;
+    padding: 0 0 16px 0;
+}
+
+.about__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: 0 0 30px 0;
+    margin: 0 0 16px 0;
+}
+
+.about__button {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: 17px 39px;
+    color: #fff;
+    background: #063416;
+    border: 2px solid #063416;
+    transition: .5s all;
+    border-radius: 7px;
+}
+.about__button:hover {
+    color: #000;
+    background: none;
+}
+@media (max-width: 768px) {
+    .about_hotel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/about_paint.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+    .about__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    .about__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 43.57px;
+        font-family: "Roboto", sans-serif;
+        padding: 0 0 16px 0;
+    }
+    
+    .about__text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        font-family: "Roboto", sans-serif;
+        padding: 0 0 30px 0;
+        margin: 0 0 16px 0;
+    }
+    .about__button {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+        font-family: "Roboto", sans-serif;
+        padding: 10px 19px;
+        color: #fff;
+        background: #063416;
+        border: 2px solid #063416;
+        transition: .5s all;
+        border-radius: 7px;
+    }
+}
+@media (max-width: 425px) {
+    .about__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .about__paint {
+        text-align: center;
+    }
+    .about__paint img {
+        width: 300px;
+        height: 200px;
+    }
+    .about_hotel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(img/about_paint.png);
+        background-size: 100%;
+        height: 100%;
+    }
+}
+/*----------GREEN SECTION------------*/
+
+.green_section {
+    background: #063416;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.green__paint {
+    padding: 0 72px 0 0;
+}
+
+.light-green__section {
+    display: flex;
+    background: #E6FFD6;
+    height: 933px;
+    width: 100%;
+}
+
+.mount__section {
+    display: flex;
+    background-image: url(img/about_paint.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+@media (max-width: 1024px) {
+    .mount__section {
+        display: flex;
+        background-image: url(img/about_paint.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 500px;
+    } 
+}
+.map__body {
+    padding: 100px 0 0 0;
+}
+
+.map_section {
+    display: flex;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.map__info {
+    padding: 77px 0 19px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map__text {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .map__body {
+        width: 500px;
+        height: 300px;
+        text-align: center;
+    }
+    iframe {
+        width: 500px;
+        height: 200px;
+    }
+}
+@media (max-width: 425px) {
+    .map__body {
+        width: 500px;
+        height: 300px;
+        text-align: center;
+    }
+    iframe {
+        width: 400px;
+        height: 200px;
+    }
+}
